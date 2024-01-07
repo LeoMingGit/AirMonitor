@@ -1,8 +1,3 @@
-<!--
- 描述: 闪动云
- 作者: Jack Chen
- 日期: 2020-05-02
--->
 
 <template>
   <div class="wrap-container sn-container"> 

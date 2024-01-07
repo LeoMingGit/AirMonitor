@@ -1,8 +1,4 @@
-<!--
- 描述: 柱饼组合联动
- 作者: Jack Chen
- 日期: 2020-04-30
--->
+ 
 
 <template>
   <div class="wrap-container sn-container"> 

@@ -1,9 +1,4 @@
-<!--
- 描述: 消息提示框模板
- 作者: Jack Chen
- 日期: 2020-04-18
--->
-
+ 
 <template>
   <transition name="fade">
     <div class="toast-container" v-if="visible">  

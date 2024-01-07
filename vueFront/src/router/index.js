@@ -9,7 +9,7 @@ const routes = [
     name: 'Login',
     component: () => import('@/views/Login.vue'),
     meta: {
-      title: '登录界面'
+      title: '登录'
     }
   },
   {
@@ -19,9 +19,9 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/home/index.vue'),
     meta: {
-      title: '酷屏首页统计图'
+      title: '回旋式空气预热器在线监测系统'
     }
   },
   {

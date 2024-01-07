@@ -1,8 +1,4 @@
-<!--
- 描述: 多彩轮播面积
- 作者: Jack Chen
- 日期: 2020-05-03
--->
+ 
 
 <template>
   <div class="wrap-container sn-container"> 

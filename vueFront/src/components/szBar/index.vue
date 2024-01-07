@@ -1,8 +1,4 @@
-<!--
- 描述: 双轴柱状图
- 作者: Jack Chen
- 日期: 2020-04-27
--->
+ 
 
 <template>
   <div class="wrap-container sn-container"> 

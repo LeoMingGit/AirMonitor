@@ -1,15 +1,9 @@
-<!--
- 描述: 登录模板
- 作者: Jack Chen
- 日期: 2020-04-18
--->
-
-<template>
+ <template>
   <div class="login-container">
   	<div class="layer">
   			<div class="some-space">
         	<div class="form">
-						<h2>大数据可视化平台</h2>
+						<h2>回旋式空气预热器在线监测系统</h2>
 						<div class="item">
 							<i class="iconfont icon-user"></i>
 							<input
@@ -39,7 +33,6 @@
 	            立即登录
 	          </button>
 	          <div class="tip">
-							默认用户名：admin ，默认密码：123456
 	          </div>
         	</div>
         </div>

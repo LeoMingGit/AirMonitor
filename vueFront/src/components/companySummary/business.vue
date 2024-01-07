@@ -1,9 +1,4 @@
-<!--
- 描述: 业务范围
- 作者: Jack Chen
- 日期: 2020-05-09
--->
-
+ 
 <template>
   <div class="business-container"> 
     <div class="chart" id="chart_left1"></div>   

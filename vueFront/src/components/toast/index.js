@@ -1,9 +1,4 @@
-/*
- * 描述: 注册全局消息提示框组件
- * 作者: Jack Chen
- * 日期: 2020-04-18
- */
-
+ 
 import Vue from 'vue'
 import Toast from './index.vue'
   

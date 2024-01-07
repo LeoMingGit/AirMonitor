@@ -1,8 +1,4 @@
-<!--
- 描述: 登录界面背景图动画
- 作者: Jack Chen
- 日期: 2020-04-18
--->
+ 
 
 <template>
   <ul class="slide-box">
