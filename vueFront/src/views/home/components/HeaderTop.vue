@@ -12,14 +12,10 @@ export default {
 
 <style lang="scss" scoped>
   .hometitle {
-      font-size: 40px;
-      font-family: "Adobe Heiti Std";
-      color: rgb(112, 210, 212);
-      line-height: 0.525;
-      text-align: center;
-      position: absolute;
-      left: 679.3px;
-      top: 50.368px;
-      z-index: 37;
+    font-size: 21px;
+    font-family: "Adobe Heiti Std";
+    color: #70d2d4;
+    line-height: 0.525;
+    text-align: center;
     }
 </style>

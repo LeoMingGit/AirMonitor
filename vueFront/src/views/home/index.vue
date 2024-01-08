@@ -1,65 +1,38 @@
-<!--
- 描述: 酷屏首页模板
- 作者: Jack Chen
- 日期: 2020-04-29
--->
-
 <template>
-  <div class="home-container">
-  	<div class="wrap" ref="editor">
-      <div class="header">
-        <header-top></header-top>
+  <div class="wrap home" ref="editor">
+    <div class="header">
+      <header-top></header-top>
+    </div>
+    <div class="main-content">
+      <div class="col col1">
+        <one-col></one-col>
       </div>
-      
-      <sinan />
-      <seamless />
-      <pyramid />
-
-      <scrollArc />
-      <szBar />
-
-      <ringPin />
-      <rotateColorful />
-      <circleRunway />
-      <scanRadius />
-
-      <cakeLinkage />
-      <pyramidTrend />
-      <dynamicLine />
-
-      <staffMix />
-      <flashCloud />
-      <ringPie />
-      <colorfulRadar />
-
-      <dynamicList />
-      <bar3d />
-      <colorfulArea />
-
-      <rainbow />
-      <gauge />
-      <waterPolo />
-      <circleNesting />
-
-      <div class="divider"></div>
-
+      <div class="col col2">
+        <two-col></two-col>
+      </div>
+      <div class="col col3">
+        <three-col></three-col>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { screenSize } from '@/assets/js/utils'
 import HeaderTop from './components/HeaderTop.vue'
+import OneCol from './components/OneCol.vue'
+import TwoCol from './components/TwoCol.vue'
+import ThreeCol from './components/ThreeCol.vue'
+
 export default {
   name: 'Home',
-  components: {HeaderTop},
+  components: { HeaderTop, OneCol, TwoCol, ThreeCol },
   data() {
-  	return {
-  		
-  	}
+    return {
+
+    }
   },
   computed: {
-  	
+
   },
   created() {
   },
@@ -67,47 +40,34 @@ export default {
     screenSize(this.$refs.editor);
   },
   methods: {
-    
+
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.home-container {
-	position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  .wrap {
-    transform-origin: 0px 0px 0px;
-    background: url(../../assets/img/bg116.png) no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
-    background-color: rgb(0, 0, 0);
-    min-width: auto;
-    width: 1920px;
-    min-height: auto;
-    height: 1080px;
-    overflow: auto;
-    .header {
-      position: absolute;
-      left: 0; 
-      top: 0; 
-      width: 100%; 
-      height: 80px; 
-    }
-    .divider {
-      position: absolute;
-      left: 50px;
-      top: 3253px;
-      width: 90%;
-      height: 50px;
-      width: 300px;
-      border: none;
-      background: transparent;
-    }
-
+.wrap {
+  transform-origin: 0px 0px 0px;
+  background: url(../../assets/img/bg116.png) no-repeat;
+}
+.home {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  .header {
+    padding: 10px;
+    text-align: center;
   }
-}	
+}
+.main-content {
+  display: grid;
+  width: 100vw;
+  height: 90vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  .col {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+}
 </style>
