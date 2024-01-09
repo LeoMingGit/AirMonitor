@@ -22,7 +22,7 @@ import HeaderTop from './components/HeaderTop.vue'
 import OneCol from './components/OneCol.vue'
 import TwoCol from './components/TwoCol.vue'
 import ThreeCol from './components/ThreeCol.vue'
-
+ 
 export default {
   name: 'Home',
   components: { HeaderTop, OneCol, TwoCol, ThreeCol },
@@ -37,8 +37,7 @@ export default {
   created() {
   },
   mounted() {
-    screenSize(this.$refs.editor);
-  },
+   },
   methods: {
 
   }
@@ -65,8 +64,6 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
   .col {
-    padding: 20px;
-    border: 1px solid #ccc;
     text-align: center;
   }
 }
